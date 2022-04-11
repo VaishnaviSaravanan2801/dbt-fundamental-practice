@@ -19,3 +19,12 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: dim_customers
+      description: "Customer trail table"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
